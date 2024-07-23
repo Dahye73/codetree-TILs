@@ -7,10 +7,10 @@ public class Main {
         int sum = 0;
         boolean check = false;
 
-        for(int i = 1; i <= 10; i++){
+        for(int i = 0; i < 10; i++){
             int a = sc.nextInt();
             if(a >= 250){
-                System.out.printf("%d %.1f", sum, (double)sum/(i-1));
+                System.out.printf("%d %.1f", sum, (double)sum/i);
                 check = true;
                 break;
             }
