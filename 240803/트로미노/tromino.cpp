@@ -26,16 +26,22 @@ int main() {
             
             int sum = arr[i][j];
             //가로줄 탐색
-            for(int k = 1;k<3;k++){
-                sum += arr[i][j+k];
+
+            if(j + 1 <=m && j + 2 <=m){
+                for(int k = 1;k<3;k++){
+                    sum += arr[i][j+k];
+                }
             }
 
             max_num = max(sum, max_num);
 
             sum = arr[i][j];
             //세로줄 탐색
-            for(int k = 1; k<3;k++){
-                sum += arr[i+k][j];
+
+            if(i + 1 <=n && i + 2 <=n){
+                for(int k = 1; k<3;k++){
+                    sum += arr[i+k][j];
+                }
             }
             max_num = max(sum, max_num);
         
