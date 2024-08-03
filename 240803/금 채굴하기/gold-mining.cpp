@@ -18,7 +18,7 @@ int main() {
     }
 
     // k의 최댓값
-    int k = (n - 1)/2;
+    int k = (n + 1)/2;
     
     for(int kk = 1; kk <= k; kk++){
 
